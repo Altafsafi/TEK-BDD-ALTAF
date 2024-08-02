@@ -21,7 +21,7 @@ public class SeleniumUtility extends BaseSetup {
     }
     private WebElement waitForVisibility(By locator){
       return   getWait().until(ExpectedConditions.visibilityOfElementLocated(locator));
-
+        // Private method was created to be called by other method for clean coding.
     }
 
     public void SendText(By locator, String value){

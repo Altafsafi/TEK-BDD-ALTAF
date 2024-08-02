@@ -17,7 +17,7 @@ public class BaseSetup {
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
-
+        // Null check before quit
     public void quitBrowser(){
         if(webDriver != null){
             webDriver.quit();
