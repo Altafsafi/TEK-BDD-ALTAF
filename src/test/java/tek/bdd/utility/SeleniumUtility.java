@@ -11,7 +11,7 @@ import java.time.Duration;
 public class SeleniumUtility extends BaseSetup {
 
     private WebDriverWait getWait(){
-        return new WebDriverWait(getWebDriver(),Duration.ofSeconds(10));
+        return new WebDriverWait(getWebDriver(),Duration.ofSeconds(20));
         // Private method was created to be called by other method for clean coding.
     }
 
