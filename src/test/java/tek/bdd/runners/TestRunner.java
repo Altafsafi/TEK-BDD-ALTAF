@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features ="classpath:features/setupTest.feature", // Directory for feature file
-        glue = "tek.bdd.steps" // package for all the steps
+        glue = "tek.bdd.steps", // package for all the steps
+        dryRun = false
+
 )
 
 public class TestRunner {

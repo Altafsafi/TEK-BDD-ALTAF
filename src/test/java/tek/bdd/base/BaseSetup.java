@@ -7,24 +7,24 @@ import java.time.Duration;
 
 public class BaseSetup {
 
-    private static WebDriver webDriver;
+    private static WebDriver driver;
 
     public void setupBrowser(){
 
-        WebDriver webDriver = new ChromeDriver();
-        webDriver.get("https://retail.tekschool-students.com/");
-        webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver = new ChromeDriver();
+        driver.get("https://retail.tekschool-students.com/");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
     }
         // Null check before quit
     public void quitBrowser(){
-        if(webDriver != null){
-            webDriver.quit();
+        if(driver != null){
+            driver.quit();
         }
     }
 
     public WebDriver getWebDriver(){
-        return webDriver;
+        return driver;
     }
 }
