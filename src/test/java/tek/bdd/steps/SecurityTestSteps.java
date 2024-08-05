@@ -31,6 +31,10 @@ public class SecurityTestSteps extends SeleniumUtility {
         ClickOnElement(SignInPage.LOGIN_BUTTON);
 
     }
+
+
+
+
     @Then("user should be able to see account link")
     public void User_Should_Be_Able_To_See_Account(){
        boolean isAccountDisplayed = isElementDisplayed(HomePage.ACCOUNT_LINK);

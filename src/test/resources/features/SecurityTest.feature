@@ -6,3 +6,4 @@ Feature: Security test feature
     Then validate user is in sign in page
     When user enter "mohammad2536@gmail.com" and "Password@123" and click on login
     Then user should be able to see account link
+
